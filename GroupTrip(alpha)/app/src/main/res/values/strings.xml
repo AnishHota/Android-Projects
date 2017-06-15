@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">GroupTrip(alpha)</string>
+    <string name="start">start trip</string>
+    <string name="instr">instructions</string>
+    <string name="exit">exit</string>
+    <string name="add">add people</string>
+    <string name="enter">Enter People Inititals</string>
+    <string name="reset">Reset</string>
+    <string name="remove">Remove</string>
+    <string name="next">next</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="travel">travel fragment</string>
+    <string name="money">money fragment</string>
+</resources>

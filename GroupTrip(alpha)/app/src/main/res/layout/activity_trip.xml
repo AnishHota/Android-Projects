@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.danteapps.android.grouptripalpha.tripActivity">
+
+    <RelativeLayout
+        android:id="@+id/addTxt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/addText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="23dp"
+            android:text="@string/add"
+            android:textAllCaps="true"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:id="@+id/enterArea"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/addText">
+
+            <EditText
+                android:id="@+id/enterName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addText"
+                android:layout_weight="1"
+                android:hint="@string/enter"
+                android:backgroundTint="@color/colorPrimary"/>
+
+            <android.support.design.widget.FloatingActionButton
+                android:id="@+id/fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/addText"
+                android:layout_toRightOf="@+id/enterName"
+                android:elevation="36dp"
+                android:src="@drawable/add2"
+                app:backgroundTint="@color/colorPrimary"
+                app:pressedTranslationZ="12dp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_below="@+id/enterName"
+            android:layout_marginTop="180dp"
+            android:background="#c0c0c0"></View>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/resetRemoveNext"
+            android:layout_below="@+id/line"
+            android:background="#7ab8dc"></ListView>
+
+        <LinearLayout
+            android:id="@+id/resetRemoveNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/reset"
+                android:layout_weight="1"/>
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/next"
+                android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>
